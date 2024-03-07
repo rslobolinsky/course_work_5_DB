@@ -6,7 +6,7 @@ from classes import Employer, Vacancy, DBManager
 def create_database(database_name: str, params: dict) -> None:
     """Создает базу данных"""
 
-    conn = psycopg2.connect(dbname='postgres for cw_5', **params)
+    conn = psycopg2.connect(dbname='postgres', **params)
     conn.autocommit = True
     cur = conn.cursor()
 
@@ -109,7 +109,7 @@ def user_interactive(database_name):
                     break
             break
         elif user_input == 0:
-            print("Досвидания!")
+            print("До свидания!")
             break
         else:
             print("Введите число от 0 до 5")
