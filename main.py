@@ -7,6 +7,6 @@ if __name__ == '__main__':
 
     params = config()
 
-    create_database("Course_Work_5", params)
-    save_data_to_database(employers_ids, "Course_Work_5", params)
-    user_interactive("Course_Work_5")
+    create_database("course_work_5", params)
+    save_data_to_database(employers_ids, "course_work_5", params)
+    user_interactive("course_work_5")
