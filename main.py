@@ -3,7 +3,16 @@ from utils import create_database, save_data_to_database, user_interactive
 
 if __name__ == '__main__':
 
-    employers_ids = [
+    employers_ids = ['5920492',
+                     '3643187',
+                     '5873504',
+                     '9498120',
+                     '6146301',
+                     '9895958',
+                     '593501',
+                     '3711736',
+                     '6157619',
+                     '10536354',
                      ]
 
     params = config()
