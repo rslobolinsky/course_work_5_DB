@@ -1,8 +1,7 @@
 from configparser import ConfigParser
 
-employers_url = "https://api.hh.ru/employers"
+employers_url = "https://api.hh.ru/employers/"
 vacancies_url = "https://api.hh.ru/vacancies"
-
 
 
 def config(filename="database.ini", section="postgresql"):

@@ -2,6 +2,7 @@ from config import config
 from utils import create_database, save_data_to_database, user_interactive
 
 if __name__ == '__main__':
+
     employers_ids = [
                      ]
 

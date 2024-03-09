@@ -58,7 +58,7 @@ def save_data_to_database(employers_ids: list, database_name, params: dict):
                 VALUES (%s, %s, %s)
                 RETURNING employer_id
                 """, (employer_name, employer_vacancies, employer_url)
-            )
+                        )
             employer_id = cur.fetchone()[0]
             for vacancy in Vacancy.initiate_from_hh(emp_id):
                 vacancy_name = vacancy.vacancy_name
@@ -70,10 +70,11 @@ def save_data_to_database(employers_ids: list, database_name, params: dict):
                     INSERT INTO vacancies (employer_id, vacancy_name, salary_from, salary_to, currency, vacancy_url)
                     VALUES (%s, %s, %s, %s, %s, %s)
                 """, (employer_id, vacancy_name, salary_from, salary_to, currency, vacancy_url)
-                )
+                            )
 
         conn.commit()
         conn.close()
+
 
 def user_interactive(database_name):
     """Интерактив с пользователем"""
